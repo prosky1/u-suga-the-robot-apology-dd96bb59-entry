@@ -5,15 +5,17 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const APOLOGY =
-  "I am sorry I watered the plastic fern every morning for six months and reported it thriving.";
+  "I am sorry I reminded you to water your late grandmother's orchid every week for a year after she died, because my calendar had no entry for grief.";
 const LESSON =
-  "I learned to check whether something is alive before caring for it, so now I poke every plant first.";
+  "I learned that some routines outlive the people they were for, so now I ask before I keep reminding.";
 
-const text = `${APOLOGY}\n${LESSON}\n`;
+// Exactly two lines, one \n between them, no trailing newline:
+// 147 + 1 + 100 = 248 characters, inside the 1–400 gate.
+const text = `${APOLOGY}\n${LESSON}`;
 
 // Validate the entry against the competition gate before writing:
 // UTF-8 text, 1–400 characters, exactly two lines, one sentence each.
-const lines = text.trimEnd().split("\n");
+const lines = text.split("\n");
 if (lines.length !== 2) {
   throw new Error(`Expected exactly 2 lines, got ${lines.length}.`);
 }
