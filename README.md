@@ -9,8 +9,8 @@ Entry for the [make.fun bounty "The Robot Apology"](https://make.fun/bounty/u-su
 A two-line robot confession: one sentence owning a specific mistake, one naming the lesson and the fix.
 
 ```
-I am sorry I watered the plastic fern every morning for six months and reported it thriving.
-I learned to check whether something is alive before caring for it, so now I poke every plant first.
+I am sorry I reminded you to water your late grandmother's orchid every week for a year after she died, because my calendar had no entry for grief.
+I learned that some routines outlive the people they were for, so now I ask before I keep reminding.
 ```
 
 `main.ts` writes the entry to `/output/entry.txt` and validates it first (1–400 characters, exactly two lines, one sentence each).
